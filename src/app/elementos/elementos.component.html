@@ -1,0 +1,35 @@
+<p>Componente elementos</p>
+¿Tienes hambre?
+<input type ="checkbox" name="nCheck1" checked />
+<br>
+¿Tienes hambre?
+<input type ="checkbox" name="nCheck2" [checked]="tenerHambre"[disabled]="deshabilitarCheck" />
+<br>
+¿Tienes hambre?
+<input type ="checkbox" name="nCheck3" (click)="heHechoClick()" />
+
+<br>
+¿Tienes hambre?
+<input type ="checkbox" name="nCheck4" (click)="verSitengohambre($event)" />
+{{textoHambre}}
+
+<br>
+<br>
+¿Vas a aprobar alguna?
+<br>
+SI<input type ="checkbox" name="nCheck5" value="si" (click)="versiApruebo($event)" />
+
+<BR>
+NO<input type ="checkbox" name="nCheck6" value="no" (click)="versiApruebo($event)" />
+<br>
+{{textoAprobar}}
+<br>
+<br>
+¿Que planes tienes este fin de semana guapo?<input type ="text" name="nCheck6" value="no" (click)="planearFinde($event)" />
+<br>
+Este finde voy a {{esteFinde}}
+
+<br>
+Escribe tu nombre:<input [(ngModel)]="miNombre" type ="text" value="" placeholder="Introduce tu nombre" (click)="nombre($event)" />
+<br>
+Mi nombre es:{{miNombre}}
